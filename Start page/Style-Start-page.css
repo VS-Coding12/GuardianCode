@@ -19,7 +19,7 @@ body{
 
     display: inline-block;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 #Emergency{
   color: white;
