@@ -5,59 +5,62 @@ body{
     align-items: center;           /* vertical center */
 }
 
-.buttons {
-    position: fixed;    /* remove from flow and stick to screen */
-    top: 50%;           /* move top edge to 50% of screen height */
-    left: 50%;          /* move left edge to 50% of screen width */
-    transform: translate(-50%, -50%); /* move it back by half width & height */
+.inputs {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
 
-    position: fixed;  
-    height: 200px;
-    width: 700px;
-
+    width: 400px;
     color: white;
-
-    display: inline-block;
-    align-items: center;
-    justify-content: center; 
-}
-#Emergency{
-  color: white;
-  width: 90%;
-  padding: 12px;
-  border: 3px solid rgb(222, 222, 222);
-  border-radius: 5px;
-  box-shadow: #000000;
-  background-color: #b31a1a;
-  margin: 0 auto;
-  font-size: 22px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-left: 5%;
-  height:100px;
 }
 
-#Emergency:hover{
-    background-color: #c90909;
+input{
+    background-color: #1c1c1c;
+    height: 50px;
+    width: 80vh;
+    padding: 0 12px;         
+    border: 2px solid rgb(79, 79, 79);
+    border-radius: 8px; 
+    color: white;  
+    font-size: 16px;
 }
 
-#Contact{
-  color: white;
-  width: 90%;
-  padding: 12px;
-  border: 3px solid rgb(222, 222, 222);
-  border-radius: 5px;
-  box-shadow: #000000;
-  background-color: #2531d2;
-  margin: 0 auto;
-  font-size: 22px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-left: 5%;
-  height:100px;
-  margin-top: 30px;
+#pnum{
+    padding-left: 42px;
+    background-image: url("/Images/Phonenumber.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 30px;}
+
+#cnum{
+    padding-left: 42px;
+    background-image: url("/Images/Car.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 30px;
+}
+#enum{
+    padding-left: 42px;
+    background-image: url("/Images/Emer.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 30px;
+}
+#email{
+    padding-left: 42px;
+    background-image: url("/Images/Email.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 30px;
 }
 
-#Contact:hover{
-    background-color: #098fc9;
+#submit{
+    background-color: rgb(42, 36, 123);
+    color: white;
+    transition: background-color 0.3s ease, border-color 0,3s ease;
+}
+#submit:hover {
+  background-color: #5e749e;
+  border-color: azure;
 }
